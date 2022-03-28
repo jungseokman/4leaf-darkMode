@@ -1,7 +1,6 @@
 import { HYDRATE } from "next-redux-wrapper";
 import { combineReducers } from "redux";
 import test from "./test";
-import mode from "./mode";
 
 const rootReducer = (state, action) => {
   switch (action.type) {
@@ -11,7 +10,6 @@ const rootReducer = (state, action) => {
     default: {
       const combinedReducer = combineReducers({
         test,
-        mode,
       });
       return combinedReducer(state, action);
     }

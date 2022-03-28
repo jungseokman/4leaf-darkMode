@@ -1,7 +1,7 @@
 import React from "react";
 
-const Index = () => {
-  return <h1>메인</h1>;
+const App = () => {
+  return <div>Hello Templete</div>;
 };
 
-export default Index;
+export default App;
